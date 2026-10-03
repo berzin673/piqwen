@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <ProjectName>PiQwen</ProjectName>
+    <TargetName>PiQwen Watch App</TargetName>
+    <BundleIdentifier>com.yourname.piqwen</BundleIdentifier>
+    <Version>1.0.0</Version>
+    <BuildNumber>1</BuildNumber>
+    <MinimumOSVersion>10.0</MinimumOSVersion>
+    <SupportedPlatforms>
+        <Platform>watchOS</Platform>
+    </SupportedPlatforms>
+    <Capabilities>
+        <Capability>com.apple.developer.networking.wifi-info</Capability>
+    </Capabilities>
+    <Files>
+        <File>PiQwenApp.swift</File>
+        <File>Models/ChatMessage.swift</File>
+        <File>Models/AppSettings.swift</File>
+        <File>Services/APIClient.swift</File>
+        <File>Services/ConnectionManager.swift</File>
+        <File>Services/SpeechManager.swift</File>
+        <File>Services/HistoryManager.swift</File>
+        <File>Views/ContentView.swift</File>
+        <File>Views/ChatView.swift</File>
+        <File>Views/ResponseView.swift</File>
+        <File>Views/HistoryView.swift</File>
+        <File>Views/SettingsView.swift</File>
+        <File>Views/StatusView.swift</File>
+    </Files>
+    <Frameworks>
+        <Framework>Foundation</Framework>
+        <Framework>SwiftUI</Framework>
+        <Framework>Combine</Framework>
+        <Framework>Speech</Framework>
+        <Framework>AVFoundation</Framework>
+    </Frameworks>
+    <BuildSettings>
+        <Setting name="SWIFT_VERSION">5.9</Setting>
+        <Setting name="ENABLE_BITCODE">NO</Setting>
+        <Setting name="IPHONEOS_DEPLOYMENT_TARGET">10.0</Setting>
+        <Setting name="WATCHOS_DEPLOYMENT_TARGET">10.0</Setting>
+        <Setting name="CODE_SIGN_STYLE">Automatic</Setting>
+        <Setting name="DEVELOPMENT_TEAM">YOUR_TEAM_ID</Setting>
+    </BuildSettings>
+</Project>
