@@ -1,0 +1,18 @@
+# PiQwen Server Requirements
+# Optimized for Raspberry Pi 5 4GB RAM
+
+# Core dependencies
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# AI inference - llama.cpp Python bindings
+# For Raspberry Pi 5 (ARM64), install from pip (pre-built wheels available)
+llama-cpp-python==0.3.4
+
+# System monitoring
+psutil==6.0.0
+
+# Optional: for WiFi management
+# python-daemon==3.0.1
